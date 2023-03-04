@@ -29,7 +29,8 @@ class App extends Component {
   // where state varialbles are initialized
   constructor() {
     super();
-    console.log(this.props);
+    console.log("props in constructor",this.props);
+    //for declaring/defining  initial state use "state".for changing state use setState.
     this.state = {
       color: "red",
       fname: "Azhar",
@@ -68,8 +69,8 @@ class App extends Component {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {this.state.color}  
-           Edit <code>src/App.js</code> and save to reload.
+          {this.state.color}{" "}    
+         Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"

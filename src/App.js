@@ -29,7 +29,7 @@ class App extends Component {
   // where state varialbles are initialized
   constructor() {
     super();
-    console.log("props in constructor",this.props);
+    // console.log("props in constructor",this.props);
     //for declaring/defining  initial state use "state".for changing state use setState.
     this.state = {
       color: "red",

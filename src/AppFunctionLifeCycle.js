@@ -9,6 +9,7 @@ function App() {
 //   componentDidUpdate()
 //   componentWillUnmount()
 //Above three methods can replace by useEffect() Hook.
+  
   useEffect(() => {
     console.log("Use Effect Called");
 
@@ -17,6 +18,7 @@ function App() {
     }, 15000);
 
     return () => {
+      //in useEffect's hook's return () we write componentWillUnmount() method logic to clear cache
       console.log("Unmounting");
       clearTimeout(timer);
     };
